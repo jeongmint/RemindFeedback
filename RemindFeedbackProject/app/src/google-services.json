@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "906261861042",
+    "firebase_url": "https://remindfeedback.firebaseio.com",
+    "project_id": "remindfeedback",
+    "storage_bucket": "remindfeedback.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906261861042:android:cc250f64c137f440",
+        "android_client_info": {
+          "package_name": "com.remindfeedbackproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906261861042-51rkdigvafbbe8215vcnhl39utf0ghjv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChfCnG6nJkufo3fB5OZcsXsqvm-PGRTCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906261861042-51rkdigvafbbe8215vcnhl39utf0ghjv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="5dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/fragment4_itm_img_content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="left|center_horizontal"
+            android:scaleType="centerCrop"
+            android:alpha="0.8"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/fragment4_itm_txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|center_vertical"
+            android:padding="8dp"
+            android:text="제목"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            android:alpha="0.5"
+
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/fragment4_itm_txt_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|center_vertical"
+            android:padding="8dp"
+            android:text="yyyy.MM.dd"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            android:alpha="0.5"
+
+            app:layout_constraintBottom_toBottomOf="@id/fragment4_itm_img_content"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

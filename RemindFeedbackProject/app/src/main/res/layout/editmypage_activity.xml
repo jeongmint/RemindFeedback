@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/editmypage_img_background_one"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:src="@color/colorPrimary"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editmypage_img_background_two"/>
+
+    <ImageView
+        android:id="@+id/editmypage_img_background_two"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="#ffffff"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editmypage_img_background_one" />
+
+    <ImageView
+        android:id="@+id/editmypage_img_profilephoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center|center_vertical"
+        android:contentDescription="@string/nav_header_desc"
+        android:minWidth="150dp"
+        android:minHeight="150dp"
+        android:src="@drawable/icon_account_48dp"
+
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="@id/editmypage_img_background_one"
+        app:layout_constraintLeft_toLeftOf="@id/editmypage_img_background_one"
+        app:layout_constraintRight_toRightOf="@id/editmypage_img_background_one"
+        app:layout_constraintBottom_toTopOf="@id/editmypage_txt_nickname"/>
+
+    <ImageButton
+        android:id="@+id/editmypage_ibtn_profilephoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/icon_camera_24dp"
+        android:background="@drawable/roundbutton"
+        android:scaleType="centerInside"
+
+        app:layout_constraintRight_toRightOf="@id/editmypage_img_profilephoto"
+        app:layout_constraintBottom_toBottomOf="@id/editmypage_img_profilephoto"/>
+
+    <TextView
+        android:id="@+id/editmypage_txt_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:text="nickname"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/editmypage_img_profilephoto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/editmypage_ibtn_nickname"
+        app:layout_constraintBottom_toTopOf="@id/editmypage_txt_email"/>
+
+    <ImageButton
+        android:id="@+id/editmypage_ibtn_nickname"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon_edit_24dp"
+        android:background="@drawable/roundbutton"
+        android:scaleType="centerInside"
+
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="@id/editmypage_txt_nickname"
+        app:layout_constraintLeft_toRightOf="@id/editmypage_txt_nickname"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/editmypage_txt_nickname" />
+
+    <TextView
+        android:id="@+id/editmypage_txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="android.studio@android.com"
+        android:textColor="#eaeaea"
+        android:textSize="20sp"
+
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/editmypage_txt_nickname"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/editmypage_img_background_one"/>
+
+    <TextView
+        android:id="@+id/editmypage_txt_profilemessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="profile message"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:background="#ffffff"
+
+        app:layout_constraintTop_toTopOf="@id/editmypage_img_background_two"
+        app:layout_constraintLeft_toLeftOf="@id/editmypage_img_background_two"
+        app:layout_constraintRight_toRightOf="@id/editmypage_img_background_two"
+        app:layout_constraintBottom_toBottomOf="@id/editmypage_img_background_two"/>
+
+    <ImageButton
+        android:id="@+id/editmypage_ibtn_profilemessage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/icon_edit_24dp"
+        android:background="@drawable/roundbutton"
+        android:scaleType="centerInside"
+
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="@id/editmypage_txt_profilemessage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/editmypage_txt_profilemessage" />
+
+</android.support.constraint.ConstraintLayout>

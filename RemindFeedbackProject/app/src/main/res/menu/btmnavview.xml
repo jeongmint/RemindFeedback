@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btmnavview_itm_today"
+        android:icon="@drawable/icon_feedbacktoday_48dp"
+        android:title="메모"
+        />
+    <item
+        android:id="@+id/btmnavview_itm_img"
+        android:icon="@drawable/icon_image_48dp"
+        android:title="사진"
+        />
+    <item
+        android:id="@+id/btmnavview_itm_record"
+        android:icon="@drawable/icon_mic_48dp"
+        android:title="녹음"
+        />
+    <item
+        android:id="@+id/btmnavview_itm_video"
+        android:icon="@drawable/icon_movie_48dp"
+        android:title="영상"
+        />
+    <!--<item-->
+        <!--android:id="@+id/btmnavview_setting"-->
+        <!--android:icon="@drawable/icon_setting_48dp"-->
+        <!--android:title="설정"-->
+        <!--/>-->
+
+</menu>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eaeaea">
+
+    <TextView
+        android:id="@+id/fragment4_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center|center_vertical"
+        android:text="설정"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/normalWhiteColor"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="미디어 설정"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center|center_vertical"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="사진 크기 변경"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center|center_vertical"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="녹음 인코딩 변경"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center|center_vertical"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="영상 화질 변경"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="회원 설정"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/setting_btn_deleteaccount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center|center_vertical"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="회원 탈퇴"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+</android.widget.LinearLayout>

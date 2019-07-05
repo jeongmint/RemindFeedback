@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/register_margin"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center|center_vertical"
+
+        android:text="remindFeedback 회원가입"
+        android:textColor="@color/normalBlackColor"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_gravity="bottom"
+
+        android:text="이메일을 입력하세요."
+        android:textColor="#000000"
+        android:textSize="16dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/register_etxt_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:hint="example@example.com"
+            android:ems="10"
+            android:maxLength="30"
+            android:inputType="textEmailAddress" />
+        <Button
+            android:id="@+id/register_btn_emailconfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중복 확인"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_gravity="bottom"
+
+        android:text="5자 이내의 이름(별명)을 입력하세요."
+        android:textColor="#000000"
+        android:textSize="16dp" />
+    <EditText
+        android:id="@+id/register_etxt_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Nick"
+        android:ems="10"
+        android:maxLength="5"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_gravity="bottom"
+
+        android:text="영문 대문자, 영문 소문자, 숫자를 모두 포함해서 10자 이내의 비밀번호를 입력하세요."
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/register_etxt_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="10" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_gravity="bottom"
+
+        android:text="위에서 입력한 비밀번호를 다시 입력하세요."
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/register_etxt_pwconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint="Password Confirm"
+        android:inputType="textPassword"
+        android:maxLength="10" />
+
+
+    <CheckBox
+        android:id="@+id/register_cbox_provision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_margin"
+
+        android:text="RemindFeedback서비스를 이용하기 위해 개인정보 제공 및 기기 기능을 일부 사용함을 확인 및 인지했으며 회원 약관에 동의합니다." />
+
+    <Button
+        android:id="@+id/register_btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_margin"
+
+        android:text="회원가입"
+        android:textSize="16sp"
+        android:textColor="@color/normalWhiteColor"
+        android:background="@color/setOneSecondAccentColor" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+</android.widget.LinearLayout>

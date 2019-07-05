@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RemindFeedback</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide1_title">introduce remindFeedback</string>
+    <string name="slide2_title">introduce remindFeedback2</string>
+    <string name="slide3_title">introduce remindFeedback3</string>
+    <string name="slide1_desc">content1</string>
+    <string name="slide2_desc">content2</string>
+    <string name="slide3_desc">content3</string>
+    <string name="replay_desc">To see the welcome slider</string>
+    <string name="replay">replay</string>
+
+    <!-- FCM Test -->
+    <string name="default_notification_channel_id">Channel ID</string>
+    <string name="default_notification_channel_name" translatable="true">Test</string>
+</resources>

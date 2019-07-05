@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="16dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical"
+                android:text="remindFeedback 로그인"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/normalBlackColor"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/login_etxt_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical"
+                android:ems="10"
+                android:maxLength="30"
+                android:hint="이메일 주소를 입력해주세요."
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/login_etxt_pw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical"
+                android:ems="10"
+                android:maxLength="10"
+                android:hint="비밀번호를 입력해주세요."
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:gravity="center|center_vertical"-->
+                <!--android:text="이메일 저장"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textColor="#000000"/>-->
+            <!--<CheckBox-->
+                <!--android:id="@+id/login_cbox_saveemail"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="20dp"/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|center_vertical"
+                android:text="자동 로그인"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+            <CheckBox
+                android:id="@+id/login_cbox_autologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/login_btn_findpw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_vertical"
+                android:text="비밀번호 찾기"
+                android:textSize="16sp"
+                android:background="@color/normalTransparentColor"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="24dp"
+                android:alpha=".5"
+                android:background="@color/normalBlackColor" />
+            <Button
+                android:id="@+id/login_btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_vertical"
+                android:text="회원 가입"
+                android:textSize="16sp"
+                android:background="@color/normalTransparentColor"/>
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/login_btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center|center_vertical"
+                android:text="로그인"
+                android:textSize="16sp"
+                android:textColor="@color/normalWhiteColor"
+                android:background="@color/setOneSecondAccentColor"/>
+        </TableRow>
+    </TableLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+</android.widget.LinearLayout>
